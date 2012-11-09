@@ -616,17 +616,21 @@
                             <div class="accordion-body collapse in" id="student-grades-container">
                                 <div class="accordion-inner">
                                     <!-- Section for adding/editing majors.  Unfortunately,
-                                         placeholders cannot be externalized. -->
+                                         placeholders cannot be externalized.
+                                         select element html
+                                         give id's to semesters -->
                                     <div class="control-group">
                                         <div class="controls well form-search"
                                                 id="student-grade-container">
                                             <div class="input-append grade">
-                                                <input type="text" class="input-small search-query"
-                                                        placeholder="Semester"
-                                                        id="student-grade-semester"/>
-                                                <input type="text" class="span1"
-                                                        placeholder="Year"
-                                                        id="student-grade-year"/>
+                                                <select id="student-grade-semester">
+                                                    <option value="NONE">Term</option>
+                                                    <option value="SPRING">Spring</option>
+                                                    <option value="FALL">Fall</option>
+                                                    <option value="SUMMER">Summer</option>
+                                                </select>
+                                                <input id="student-grade-year" type="number" name=" 
+                                                        quantity" min="1980" max="2012" placeholder="year"/>
                                                 <input type="text" class="input-medium"
                                                         placeholder="GPA"
                                                         id="student-grade-gpa"/>

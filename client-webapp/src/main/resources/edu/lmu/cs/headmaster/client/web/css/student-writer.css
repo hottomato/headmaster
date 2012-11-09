@@ -46,3 +46,11 @@ table > tbody > tr > td.form-search {
         .input-append.major > *:nth-child(3) {
     border-radius: inherit;
 }
+#student-grade-semester{
+    margin-right: 10px;
+}
+#student-grade-year{
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
